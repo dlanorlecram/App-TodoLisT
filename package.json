@@ -1,0 +1,31 @@
+{
+  "name": "apptodolist",
+  "version": "1.0.0",
+  "description": "App-TodoLisT",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlanorlecram/App-TodoLisT.git"
+  },
+  "keywords": [
+    "Todo",
+    "List",
+    "app"
+  ],
+  "author": "dlanorlecram",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dlanorlecram/App-TodoLisT/issues"
+  },
+  "homepage": "https://github.com/dlanorlecram/App-TodoLisT#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-pug": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-package": "latest"
+  }
+}
