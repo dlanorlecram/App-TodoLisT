@@ -1,0 +1,66 @@
+mixin input(type, text/*, label*/)
+  .input-container
+    input( type = type placeholder = text)
+    //label( for=label )=label
+    .bar
+doctype 5
+html
+  head
+    meta(charset = 'utf8')
+    meta(description = '')
+    title App TodoList
+    link( href='css/master.css', type='text/css', rel='stylesheet')
+    link( href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css', type='text/css', rel='stylesheet')
+  body
+    - var name = "Ronald";
+    #wrappers
+        header
+          .container
+            .inner_container
+              .name
+                h1
+                  |Hi
+                  br
+                  |#{name}!
+              .collapse
+                .dotted_grouped
+                  span
+                  span
+                  span
+              nav.menu_main
+                .small_block
+                  ul#menu
+                    li: a(href="") Account
+                    li: a(href="") Rapportez un bug
+                    li: a(href="") Partager
+                    li: a(href="") contactez nous
+        section
+          .container
+            .row
+              .app
+                .inner_app
+                  .header_app
+                    .title
+                      h2 To Do app
+                      p Looks like you are in a mall. Here is a list of thing you need to do.
+                  .display_entry_app
+                  .entry_app
+                    .toggle_position
+                      .magic_toggle
+                        i.icon.ion-android-add
+                    ng-submit
+                      .container_form
+                        .inner_container_form
+                          h4 Add a new task
+                          button#post
+                            i.ion-checkmark.validate
+                          form
+                            +input('text', 'Acheter des carottes')
+                            .button-container
+                              h5 Choice a theme task
+                              button
+                                i.ion-ios-briefcase
+                              button
+                                i.ion-ios-cart
+                              button
+                                i.ion-plane
