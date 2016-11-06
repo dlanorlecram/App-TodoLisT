@@ -1,0 +1,219 @@
+@import "font.scss";
+//@import "../../bower_components/Ionicons/scss/ionicons.scss";
+
+body, html{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+ul, li, ol,a{
+  padding: 0;
+  margin: 0;
+}
+header{
+  //width: 100%;
+  //height: 100px;
+  padding: 15px 10px;
+  //background-color: green;
+  .container{
+    height: 130px;
+    position: relative;
+    //height: 50px;
+    .inner_container{
+      width: 1200px;
+      height: 100%;
+      margin: 0 auto;
+      position: relative;
+      .name{
+        display: table;
+        font-family: 'Cabin', sans-serif;
+      }
+      .collapse{
+        display: table;
+        //background-color: yellow;
+        height: 100%;
+        width: 30px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        .dotted_grouped{
+          display: table;
+          margin: 0 auto;
+          cursor: pointer;
+          line-height: 33px;
+          margin-top: 20px;
+          span{
+            width: 6px;
+            height: 6px;
+            background: #c0c0c0;
+            display: block;
+            border-radius: 100%;
+            margin: 5px;
+          }
+        }
+      }
+      nav{
+        display: block;
+        background-color: white;
+        position: absolute;
+        bottom: -100px;
+        right: 0;
+        padding: 10px;
+        border-radius: 2px;
+        //box-shadow: 0px 1px 5px #c0c0c0;
+        border: 1px solid #c0c0c0;
+        z-index: 2;
+        ul{
+          width: 230px;
+          text-align: left;
+          li{
+            list-style: none;
+            display: block;
+            a{
+              font-family: 'Source Sans Pro', sans-serif;
+              color: #E6726C;
+              font-weight: 200;
+              text-decoration: none;
+              display: block;
+              padding: 10px;
+              &:hover{
+                color:white;
+                transition: .45s;
+                background: #E6726C;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  .app{
+    //background-color: antiquewhite;
+    max-width: 780px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 2px;
+    padding: 53px;
+    border: 1px solid #c0c0c0;
+    .inner_app{
+      .header_app{
+        .title{
+          h2{
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 18px;
+          }
+          p{
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}
+.toggle_position{
+  position: relative;
+  .magic_toggle{
+    background-color: salmon;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    i{
+      font-size: 35px;
+      text-align: center;
+      display: block;
+      margin-top: 7px;
+      color: white;
+
+    }
+  }
+}
+.display_entry_app{
+  background-color: beige;
+  min-height: 400px;
+  margin-bottom: 16px;
+}
+.container_form{
+  position: relative;
+  .inner_container_form{
+    position: absolute;
+    background-color: salmon;
+    height: 150px;
+    width: 250px;
+    right: 49px;
+    bottom: 0px;
+    padding: 15px 10px;
+    border-radius: 2px;
+    box-shadow: 1px 3px 4px 1px #c0c0c0;
+    h4{
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      margin-top: 0px;
+      color: white;
+    }
+    #post{
+      border: none;
+      background-color: transparent;
+      padding-left: 0px;
+      padding-right: 0px;
+      position: absolute;
+      right: 9px;
+      top: 15px;
+      color: white;
+      .validate{
+        font-size: 20px;
+      }
+    }
+    form{
+      input[type='text']{
+        height: 35px;
+        width: 100%;
+        border: none;
+        padding: 5px;
+        border-radius: 2px;
+        font-size: 12px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #c0c0c0;
+      }
+    }
+  }
+}
+.button-container{
+  margin-top: 15px;
+  h5{
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: white;
+  }
+  button{
+    width: 32.25%;
+    border: none;
+    padding: 0 3px;
+    height: 26px;
+    background-color: inherit;
+    color: white;
+    border: 1px solid;
+    transition: 1s;
+    &:hover{
+      background-color: white;
+      color:salmon;
+    }
+    i{
+      font-size: 20px;
+    }
+  }
+}
