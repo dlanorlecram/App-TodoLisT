@@ -208,4 +208,15 @@ header .container .inner_container nav ul li a:hover {
   font-size: 20px;
 }
 
+footer {
+  height: 50px;
+  line-height: 50px;
+  margin-top: 40px;
+  text-align: center;
+}
+footer p {
+  font-size: 12px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 /*# sourceMappingURL=master.css.map */
