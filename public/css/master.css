@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i");
+body, html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+ul, li, ol, a {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  padding: 15px 10px;
+}
+header .container {
+  height: 130px;
+  position: relative;
+}
+header .container .inner_container {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+header .container .inner_container .name {
+  display: table;
+  font-family: 'Cabin', sans-serif;
+}
+header .container .inner_container .collapse {
+  display: table;
+  height: 100%;
+  width: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+header .container .inner_container .collapse .dotted_grouped {
+  display: table;
+  margin: 0 auto;
+  cursor: pointer;
+  line-height: 33px;
+  margin-top: 20px;
+}
+header .container .inner_container .collapse .dotted_grouped span {
+  width: 6px;
+  height: 6px;
+  background: #c0c0c0;
+  display: block;
+  border-radius: 100%;
+  margin: 5px;
+}
+header .container .inner_container nav {
+  display: block;
+  background-color: white;
+  position: absolute;
+  bottom: -100px;
+  right: 0;
+  padding: 10px;
+  border-radius: 2px;
+  border: 1px solid #c0c0c0;
+  z-index: 2;
+}
+header .container .inner_container nav ul {
+  width: 230px;
+  text-align: left;
+}
+header .container .inner_container nav ul li {
+  list-style: none;
+  display: block;
+}
+header .container .inner_container nav ul li a {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #E6726C;
+  font-weight: 200;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+header .container .inner_container nav ul li a:hover {
+  color: white;
+  transition: .45s;
+  background: #E6726C;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.container .app {
+  max-width: 780px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 2px;
+  padding: 53px;
+  border: 1px solid #c0c0c0;
+}
+.container .app .inner_app .header_app .title h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+}
+.container .app .inner_app .header_app .title p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.toggle_position {
+  position: relative;
+}
+.toggle_position .magic_toggle {
+  background-color: salmon;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+.toggle_position .magic_toggle i {
+  font-size: 35px;
+  text-align: center;
+  display: block;
+  margin-top: 7px;
+  color: white;
+}
+
+.display_entry_app {
+  background-color: beige;
+  min-height: 400px;
+  margin-bottom: 16px;
+}
+
+.container_form {
+  position: relative;
+}
+.container_form .inner_container_form {
+  position: absolute;
+  background-color: salmon;
+  height: 150px;
+  width: 250px;
+  right: 49px;
+  bottom: 0px;
+  padding: 15px 10px;
+  border-radius: 2px;
+  box-shadow: 1px 3px 4px 1px #c0c0c0;
+}
+.container_form .inner_container_form h4 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 0px;
+  color: white;
+}
+.container_form .inner_container_form #post {
+  border: none;
+  background-color: transparent;
+  padding-left: 0px;
+  padding-right: 0px;
+  position: absolute;
+  right: 9px;
+  top: 15px;
+  color: white;
+}
+.container_form .inner_container_form #post .validate {
+  font-size: 20px;
+}
+.container_form .inner_container_form form input[type='text'] {
+  height: 35px;
+  width: 100%;
+  border: none;
+  padding: 5px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #c0c0c0;
+}
+
+.button-container {
+  margin-top: 15px;
+}
+.button-container h5 {
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: white;
+}
+.button-container button {
+  width: 32.25%;
+  border: none;
+  padding: 0 3px;
+  height: 26px;
+  background-color: inherit;
+  color: white;
+  border: 1px solid;
+  transition: 1s;
+}
+.button-container button:hover {
+  background-color: white;
+  color: salmon;
+}
+.button-container button i {
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=master.css.map */

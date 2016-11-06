@@ -1,0 +1,79 @@
+<!DOCTYPE 5>
+<html>
+  <head>
+    <meta charset="utf8"/>
+    <meta description=""/>
+    <title>App TodoList</title>
+    <link href="css/master.css" type="text/css" rel="stylesheet"/>
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" type="text/css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div id="wrappers">
+      <header>
+        <div class="container">
+          <div class="inner_container">
+            <div class="name">
+              <h1>Hi<br/>Ronald!</h1>
+            </div>
+            <div class="collapse">
+              <div class="dotted_grouped"><span></span><span></span><span></span></div>
+            </div>
+            <nav class="menu_main">
+              <div class="small_block">
+                <ul id="menu">
+                  <li><a href="">Account</a></li>
+                  <li><a href="">Rapportez un bug</a></li>
+                  <li><a href="">Partager</a></li>
+                  <li><a href="">contactez nous</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="app">
+              <div class="inner_app">
+                <div class="header_app">
+                  <div class="title">
+                    <h2>To Do app</h2>
+                    <p>Looks like you are in a mall. Here is a list of thing you need to do.</p>
+                  </div>
+                </div>
+                <div class="display_entry_app"></div>
+                <div class="entry_app">
+                  <div class="toggle_position">
+                    <div class="magic_toggle"><i class="icon ion-android-add"></i></div>
+                  </div>
+                  <ng-submit>
+                    <div class="container_form">
+                      <div class="inner_container_form">
+                        <h4>Add a new task</h4>
+                        <button id="post"><i class="ion-checkmark validate"></i></button>
+                        <form>
+                          <div class="input-container">
+                            <input type="text" placeholder="Acheter des carottes"/>
+                            <!--label( for=label )=label-->
+                            <div class="bar"></div>
+                          </div>
+                          <div class="button-container">
+                            <h5>Choice a theme task</h5>
+                            <button><i class="ion-ios-briefcase"></i></button>
+                            <button><i class="ion-ios-cart"></i></button>
+                            <button><i class="ion-plane"></i></button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </ng-submit>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
