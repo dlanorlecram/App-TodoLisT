@@ -11,6 +11,8 @@ html
     title App TodoList
     link( href='css/master.css', type='text/css', rel='stylesheet')
     link( href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css', type='text/css', rel='stylesheet')
+    script(src='../bower_components/angular/angular.min.js')
+    script(src='../bower_components/angular/app_todo.js')
   body
     - var name = "Ronald";
     #wrappers
@@ -47,9 +49,12 @@ html
                     .container
                       .item_task
                         .options
-                          .done
-                          .remove
-                          .change
+                          .opt.done
+                            i.ion-ios-minus-empty
+                          .opt.remove
+                            i.ion-ios-close-empty
+                          .opt.change
+                            i.ion-ios-compose
                         .entitled
                           span Buy a dozen egg
                         .type_of_task
@@ -65,9 +70,9 @@ html
                           button#post
                             i.ion-checkmark.validate
                           form
-                            +input('text', 'Acheter des carottes')
+                            +input('text', 'Enter your task ...')
                             .button-container
-                              h5 Choice a theme task
+                              h5 Choice a theme task:
                               button
                                 i.ion-ios-briefcase
                               button
