@@ -56,7 +56,7 @@ header .container .inner_container .collapse .dotted_grouped span {
   margin: 5px;
 }
 header .container .inner_container nav {
-  display: block;
+  display: none;
   background-color: white;
   position: absolute;
   bottom: -100px;
@@ -136,6 +136,7 @@ header .container .inner_container nav ul li a:hover {
 }
 
 .container_form {
+  display: none;
   position: relative;
   color: #F95658;
 }
@@ -163,7 +164,7 @@ header .container .inner_container nav ul li a:hover {
   padding-right: 0px;
   position: absolute;
   right: 9px;
-  top: 15px;
+  top: 11px;
   color: #C0C0C0;
   cursor: pointer;
 }
@@ -246,12 +247,11 @@ footer p {
   line-height: 50px;
   display: inline-block;
   float: left;
-  width: 69%;
+  width: 61%;
   font-size: 17px;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   padding-left: 30px;
-  text-decoration: line-through;
   color: #c0c0c0;
   letter-spacing: 5px;
 }

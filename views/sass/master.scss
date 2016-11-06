@@ -58,7 +58,7 @@ header{
         }
       }
       nav{
-        display: block;
+        display: none;
         background-color: white;
         position: absolute;
         bottom: -100px;
@@ -147,6 +147,7 @@ header{
   margin-bottom: 16px;
 }
 .container_form{
+  display: none;
   position: relative;
   color: #F95658;
   .inner_container_form{
@@ -173,7 +174,7 @@ header{
       padding-right: 0px;
       position: absolute;
       right: 9px;
-      top: 15px;
+      top: 11px;
       color: #C0C0C0;
       cursor: pointer;
       &:hover{
@@ -260,12 +261,12 @@ footer{
     line-height: 50px;
     display: inline-block;
     float: left;
-    width: 69%;
+    width: 61%;
     font-size: 17px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
     padding-left: 30px;
-    text-decoration: line-through;
+    //text-decoration: line-through;
     color: #c0c0c0;
     letter-spacing: 5px;
   }

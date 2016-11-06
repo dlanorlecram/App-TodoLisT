@@ -7,10 +7,12 @@
     <link href="css/master.css" type="text/css" rel="stylesheet"/>
     <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" type="text/css" rel="stylesheet"/>
     <script src="../bower_components/angular/angular.min.js"></script>
-    <script src="../bower_components/angular/app_todo.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="script/app_todo.js"></script>
+    <script src="script/script.js"></script>
   </head>
-  <body>
-    <div id="wrappers">
+  <body ng-app="app_TodoList">
+    <div id="wrappers" ng-controller="sumbitCtrl">
       <header>
         <div class="container">
           <div class="inner_container">
@@ -46,13 +48,14 @@
                 </div>
                 <div class="display_entry_app">
                   <div class="container">
-                    <div class="item_task">
+                    <div class="item_task" ng-repeat="task in tasks">
                       <div class="options">
-                        <div class="opt done"><i class="ion-ios-minus-empty"></i></div>
+                        <div class="opt done"><i class="ion-ios-checkmark-outline">
+                            <!--ion-ios-minus-empty--></i></div>
                         <div class="opt remove"><i class="ion-ios-close-empty"></i></div>
                         <div class="opt change"><i class="ion-ios-compose"></i></div>
                       </div>
-                      <div class="entitled"><span>Buy a dozen egg</span></div>
+                      <div class="entitled"><span>{{task.entitled}}</span></div>
                       <div class="type_of_task"><i class="ion-ios-cart"></i></div>
                     </div>
                   </div>
@@ -61,14 +64,16 @@
                   <div class="toggle_position">
                     <div class="magic_toggle"><i class="icon ion-android-add"></i></div>
                   </div>
-                  <ng-submit>
+                  <ng-submit ng-submit="submitTask()">
                     <div class="container_form">
                       <div class="inner_container_form">
                         <h4>Add a new task</h4>
-                        <button id="post"><i class="ion-checkmark validate"></i></button>
+                        <!--button#post(type="submit")i.ion-checkmark.validate
+                        -->
                         <form>
+                          <button id="post" type="submit"><i class="ion-checkmark validate"></i></button>
                           <div class="input-container">
-                            <input type="text" placeholder="Enter your task ..."/>
+                            <input type="text" id="task" placeholder="Enter your task ..." ng-model="newTask.entitled"/>
                             <!--label( for=label )=label-->
                             <div class="bar"></div>
                           </div>

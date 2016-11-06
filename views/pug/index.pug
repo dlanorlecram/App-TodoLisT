@@ -1,6 +1,6 @@
 mixin input(type, text/*, label*/)
   .input-container
-    input( type = type placeholder = text)
+    input( type = type id="task" placeholder=text ng-model="newTask.entitled")
     //label( for=label )=label
     .bar
 doctype 5
@@ -12,10 +12,12 @@ html
     link( href='css/master.css', type='text/css', rel='stylesheet')
     link( href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css', type='text/css', rel='stylesheet')
     script(src='../bower_components/angular/angular.min.js')
-    script(src='../bower_components/angular/app_todo.js')
-  body
+    script(src='../bower_components/jquery/dist/jquery.min.js')
+    script(src='script/app_todo.js')
+    script(src='script/script.js')
+  body(ng-app = 'app_TodoList')
     - var name = "Ronald";
-    #wrappers
+    #wrappers(ng-controller = 'sumbitCtrl')
         header
           .container
             .inner_container
@@ -47,29 +49,32 @@ html
                       p Looks like you are in a mall. Here is a list of thing you need to do.
                   .display_entry_app
                     .container
-                      .item_task
+                      .item_task(ng-repeat = "task in tasks")
                         .options
                           .opt.done
-                            i.ion-ios-minus-empty
+                            i.ion-ios-checkmark-outline
+                              //ion-ios-minus-empty
                           .opt.remove
                             i.ion-ios-close-empty
                           .opt.change
                             i.ion-ios-compose
                         .entitled
-                          span Buy a dozen egg
+                          span {{task.entitled}}
                         .type_of_task
                           i.ion-ios-cart
                   .entry_app
                     .toggle_position
                       .magic_toggle
                         i.icon.ion-android-add
-                    ng-submit
+                    ng-submit(ng-submit="submitTask()")
                       .container_form
                         .inner_container_form
                           h4 Add a new task
-                          button#post
+                          //button#post(type="submit")
                             i.ion-checkmark.validate
                           form
+                            button#post(type="submit")
+                              i.ion-checkmark.validate
                             +input('text', 'Enter your task ...')
                             .button-container
                               h5 Choice a theme task:

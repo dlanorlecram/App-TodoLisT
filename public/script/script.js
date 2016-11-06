@@ -1,0 +1,22 @@
+$(document).ready(function(){
+  console.log('chargé');
+  $('.magic_toggle').click(function(){
+    $('.container_form').toggle();
+  });
+  $('.dotted_grouped').click(function(){
+    $('.menu_main').toggle();
+  });
+  $('.done').click(function(){
+    if($(this).find('i').hasClass('ion-ios-checkmark-outline')){
+      $(this).find('i').removeClass('ion-ios-checkmark-outline').addClass('ion-ios-checkmark');
+      $('.entitled').find('span').css({'text-decoration':'line-through'});
+    }
+    else{
+      $(this).find('i').removeClass('ion-ios-checkmark').addClass('ion-ios-checkmark-outline');
+    }
+  });
+  $('.remove').click(function(){
+    $('.item_task').parent(this).hide();
+  });
+
+});
