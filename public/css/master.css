@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i");
+* {
+  box-sizing: border-box;
+}
+
 body, html {
   padding: 0;
   margin: 0;
@@ -85,15 +89,15 @@ header .container .inner_container nav ul li a:hover {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 .container .app {
-  max-width: 780px;
+  max-width: 900px;
   height: auto;
   margin: 0 auto;
   border-radius: 2px;
-  padding: 53px;
+  padding: 20px 99px;
   border: 1px solid #c0c0c0;
 }
 .container .app .inner_app .header_app .title h2 {
@@ -127,22 +131,22 @@ header .container .inner_container nav ul li a:hover {
 }
 
 .display_entry_app {
-  background-color: beige;
   min-height: 400px;
   margin-bottom: 16px;
 }
 
 .container_form {
   position: relative;
+  color: #F95658;
 }
 .container_form .inner_container_form {
   position: absolute;
-  background-color: salmon;
-  height: 150px;
-  width: 250px;
+  background-color: white;
+  height: 170px;
+  width: 270px;
   right: 49px;
   bottom: 0px;
-  padding: 15px 10px;
+  padding: 12px 10px;
   border-radius: 2px;
   box-shadow: 1px 3px 4px 1px #c0c0c0;
 }
@@ -151,7 +155,6 @@ header .container .inner_container nav ul li a:hover {
   font-size: 16px;
   font-weight: 300;
   margin-top: 0px;
-  color: white;
 }
 .container_form .inner_container_form #post {
   border: none;
@@ -161,7 +164,11 @@ header .container .inner_container nav ul li a:hover {
   position: absolute;
   right: 9px;
   top: 15px;
-  color: white;
+  color: #C0C0C0;
+  cursor: pointer;
+}
+.container_form .inner_container_form #post:hover {
+  color: #F95658;
 }
 .container_form .inner_container_form #post .validate {
   font-size: 20px;
@@ -170,13 +177,13 @@ header .container .inner_container nav ul li a:hover {
   height: 35px;
   width: 100%;
   border: none;
+  border-bottom: 1px solid #F95658;
   padding: 5px;
-  border-radius: 2px;
   font-size: 12px;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  color: #c0c0c0;
+  background-color: transparent;
 }
 
 .button-container {
@@ -188,7 +195,7 @@ header .container .inner_container nav ul li a:hover {
   font-weight: 300;
   margin-top: 0;
   margin-bottom: 8px;
-  color: white;
+  color: #F95658;
 }
 .button-container button {
   width: 32.25%;
@@ -196,13 +203,14 @@ header .container .inner_container nav ul li a:hover {
   padding: 0 3px;
   height: 26px;
   background-color: inherit;
-  color: white;
+  color: inherit;
   border: 1px solid;
   transition: 1s;
+  cursor: pointer;
 }
 .button-container button:hover {
-  background-color: white;
-  color: salmon;
+  background-color: #F95658;
+  color: white;
 }
 .button-container button i {
   font-size: 20px;
@@ -217,6 +225,72 @@ footer {
 footer p {
   font-size: 12px;
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+.item_task {
+  height: 50px;
+  display: block;
+  padding-left: 40px;
+  padding-right: 15px;
+  border-bottom: 1px solid #c0c0c0;
+  border-top: 1px solid #c0c0c0;
+}
+.item_task .option {
+  display: inline-block;
+  float: left;
+  width: auto;
+  height: 100%;
+}
+.item_task .entitled {
+  height: 100%;
+  line-height: 50px;
+  display: inline-block;
+  float: left;
+  width: 69%;
+  font-size: 17px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  padding-left: 30px;
+  text-decoration: line-through;
+  color: #c0c0c0;
+  letter-spacing: 5px;
+}
+.item_task .type_of_task {
+  display: inline-block;
+  height: 100%;
+  float: left;
+}
+.item_task .type_of_task i {
+  margin: 0 10px;
+  height: auto;
+  display: table;
+}
+.item_task .type_of_task i:before {
+  line-height: 50px;
+  font-size: 35px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #c0c0c0;
+}
+
+.opt {
+  height: 50px;
+  display: block;
+  margin-right: 10px;
+  text-align: center;
+  float: left;
+}
+.opt i {
+  margin: 0 10px;
+  height: auto;
+  display: table;
+}
+.opt i:before {
+  line-height: 50px;
+  font-size: 35px;
+  cursor: pointer;
+  font-weight: 300;
+  color: #c0c0c0;
 }
 
 /*# sourceMappingURL=master.css.map */

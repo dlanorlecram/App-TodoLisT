@@ -6,6 +6,8 @@
     <title>App TodoList</title>
     <link href="css/master.css" type="text/css" rel="stylesheet"/>
     <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" type="text/css" rel="stylesheet"/>
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/angular/app_todo.js"></script>
   </head>
   <body>
     <div id="wrappers">
@@ -46,9 +48,9 @@
                   <div class="container">
                     <div class="item_task">
                       <div class="options">
-                        <div class="done"></div>
-                        <div class="remove"></div>
-                        <div class="change"></div>
+                        <div class="opt done"><i class="ion-ios-minus-empty"></i></div>
+                        <div class="opt remove"><i class="ion-ios-close-empty"></i></div>
+                        <div class="opt change"><i class="ion-ios-compose"></i></div>
                       </div>
                       <div class="entitled"><span>Buy a dozen egg</span></div>
                       <div class="type_of_task"><i class="ion-ios-cart"></i></div>
@@ -66,12 +68,12 @@
                         <button id="post"><i class="ion-checkmark validate"></i></button>
                         <form>
                           <div class="input-container">
-                            <input type="text" placeholder="Acheter des carottes"/>
+                            <input type="text" placeholder="Enter your task ..."/>
                             <!--label( for=label )=label-->
                             <div class="bar"></div>
                           </div>
                           <div class="button-container">
-                            <h5>Choice a theme task</h5>
+                            <h5>Choice a theme task:</h5>
                             <button><i class="ion-ios-briefcase"></i></button>
                             <button><i class="ion-ios-cart"></i></button>
                             <button><i class="ion-plane"></i></button>
